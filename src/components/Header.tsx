@@ -1,5 +1,5 @@
-"use client"
-import { Box, Flex, Button, Spacer } from '@chakra-ui/react'
+"use client";
+import { Box, Flex, Button, Spacer } from "@chakra-ui/react";
 
 export default function Header() {
   return (
@@ -22,5 +22,5 @@ export default function Header() {
         </Button>
       </Flex>
     </Box>
-  )
+  );
 }

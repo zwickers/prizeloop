@@ -1,0 +1,30 @@
+{
+  "name": "prizeloop-contracts",
+  "version": "1.0.0",
+  "description": "Smart contracts for Prizeloop lottery on Base L2",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "test:coverage": "hardhat coverage",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network baseSepolia",
+    "deploy:mainnet": "hardhat run scripts/deploy.js --network base",
+    "verify:sepolia": "hardhat verify --network baseSepolia",
+    "verify:mainnet": "hardhat verify --network base",
+    "clean": "hardhat clean"
+  },
+  "keywords": ["lottery", "smart-contract", "base", "chainlink", "vrf", "usdc"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@nomicfoundation/hardhat-verify": "^1.1.1",
+    "hardhat": "^2.19.0",
+    "dotenv": "^16.3.1",
+    "chai": "^4.3.10",
+    "@types/chai": "^4.3.11"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "@chainlink/contracts": "^0.8.0"
+  }
+}
