@@ -159,3 +159,15 @@ All without installing anything or needing testnet funds!
 ---
 
 **Need help?** Everything is in `REMIX_DEPLOYMENT_GUIDE.md` 📚
+
+**_Results_**
+So the whole flow is now verified in Remix VM:
+
+Deploy mocks (USDC + VRF)
+Create VRF subscription, fund it, add lottery as consumer
+Deploy PrizeloopLottery
+Create a round
+Mint USDC, approve, buy tickets (3 accounts)
+Wait for round end, call drawWinner
+Fulfill randomness in mock VRF
+Winners selected, prizes claimed
